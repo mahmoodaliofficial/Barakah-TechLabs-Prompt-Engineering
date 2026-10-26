@@ -68,3 +68,37 @@ Few-Shot Result: 10/10 correct (100% Accuracy)
 After I added the 4 examples, the AI understood the difference between an actual billing problem and a tech bug happening on a billing page. It got all 10 right.
 
 (I have also uploaded the output screenshots in this repo).
+
+-----------------------------------------
+
+Barakah TechLabs Internship - Task 3
+Topic: Strict JSON Output
+
+In my second task, I had to write a prompt that makes the AI reply only in JSON format without any extra chatting like "Sure, here is your JSON".
+
+
+--- My Prompt ---
+
+Hey, read this customer review and give me the details in JSON format. Please only reply with the JSON code and don't write any extra text before or after it. Use these keys: name, product, rating, issues, and refund_needed.
+
+Review:
+"Hi, I am Ali. I bought the Pro Gaming Mouse 3 days ago. I'd give it 2 out of 5 stars. The scroll wheel is stuck and the left click doesn't work properly. Please refund my money."
+
+
+--- AI Output ---
+
+{
+  "name": "Ali",
+  "product": "Pro Gaming Mouse",
+  "rating": 2,
+  "issues": [
+    "scroll wheel is stuck",
+    "left click doesn't work properly"
+  ],
+  "refund_needed": true
+}
+
+
+--- Result ---
+
+It worked on the first try. The AI pulled out all the details from the review and gave me clean JSON without any extra words. (Screenshot is uploaded in the repo).
